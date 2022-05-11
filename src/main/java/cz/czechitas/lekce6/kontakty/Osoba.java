@@ -137,8 +137,7 @@ public class Osoba {
      * @return Pořadí dítěte.
      */
     private int kolikateJe(String jmeno) {
-        //TODO
-        return 0;
+        return deti.indexOf(jmeno);
     }
 
     /**
@@ -152,19 +151,6 @@ public class Osoba {
         }
     }
     //endregion
-
-
-    /**
-     * Vrací pořadové číslo, kolikáté je uvedené dítě na seznamu.
-     *
-     * Vrací pořadí v běžném číslování, tj. první dítě je 1. Pokud dítě na seznamu není, vrací -1.
-     *
-     * @param jmeno Křestní jméno hledaného dítěte.
-     * @return Pořadí dítěte.
-     */
-    private int kolikateJe(String jmeno) {
-        return deti.indexOf(jmeno);
-    }
 
     //region Implementace osoby.
     public String getJmeno() {
